@@ -102,5 +102,47 @@
     });
   });
 </script>
+<!-- Botão de Reflexão -->
+<button id="reflexaoBtn">Reflexão</button>
+
+<!-- Pop-up -->
+<div id="popupReflexao" class="popup">
+  <div class="popup-conteudo">
+    <span class="fechar" id="fecharPopup">&times;</span>
+    <h2>Reflexão</h2>
+    <p>"Seria o único propósito da folha, o de cair?"</p>
+    <p>
+      A frase questiona se estamos destinados apenas a falhar ou sofrer, como uma folha que só existe para cair.
+      Ela usa a folha como metáfora para a vida humana — refletindo dor, culpa e a busca por um propósito maior.
+    </p>
+    <ul>
+      <li><strong>Destino:</strong> estamos presos ao que nos acontece?</li>
+      <li><strong>Propósito:</strong> existe algo além da queda?</li>
+      <li><strong>Redenção:</strong> é possível recomeçar depois de errar?</li>
+    </ul>
+    <p>
+      A mensagem é simples, mas poderosa: <strong>A queda não define quem somos.</strong> Às vezes, ela é só parte do caminho.
+    </p>
+  </div>
+</div>
+<script>
+  const btn = document.getElementById("reflexaoBtn");
+  const popup = document.getElementById("popupReflexao");
+  const fechar = document.getElementById("fecharPopup");
+
+  btn.onclick = () => {
+    popup.style.display = "block";
+  }
+
+  fechar.onclick = () => {
+    popup.style.display = "none";
+  }
+
+  window.onclick = (event) => {
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  }
+</script>
 </body>
 </html>
