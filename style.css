@@ -297,3 +297,11 @@ frase-balançando {
   font-weight: bold;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  #reflexaoBtn {
+    top: 1200px;     /* ajuste conforme o conteúdo */
+    left: 20px;      /* bem próximo da esquerda */
+    right: auto;     /* caso esteja herdando de outra config */
+  }
+}
