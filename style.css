@@ -233,23 +233,29 @@ frase-balançando {
 }
 
 #reflexaoBtn {
-  position:absolute;
-  top: -220px;
-  left: 790px;
   background-color: #00e8f8;
   color: #ffffff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
+  padding: 6px 14px;
+  border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
-  box-shadow: 0 0 10px #00e8f8;
-  z-index: 1000;
+  box-shadow: 0 0 8px #00e8f8;
+  font-size: 14px;
   transition: background-color 0.3s;
+  margin-left: 780px;
 }
 
 #reflexaoBtn:hover {
   background-color: #00cfd8;
+}
+
+.links-e-botao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* quebra se for necessário no mobile */
+  margin-top: 10px;
 }
 
 /* Estilo do pop-up */
@@ -296,15 +302,4 @@ frase-balançando {
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  #reflexaoBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    left: auto;
-    top: auto;
-    z-index: 1000;
-  }
 }
